@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="https://httpbin.org/anything" class="login-form">
+      <fieldset class="login-form-fieldset">
+        <legend class="login-form-legend">[GET]</legend>
+        <div class="login-form-field-wrapper">
+          <label for="username" class="login-form-field-label">Username</label>
+          <input id="username" name="username" class="login-form-field-value" />
+        </div>
+        <div class="login-form-field-wrapper">
+          <label for="password" class="login-form-field-label">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            class="login-form-field-value"
+          />
+        </div>
+        <div class="login-form-field-wrapper">
+          <label for="date" class="login-form-field-label">Date</label>
+          <input
+            id="date"
+            name="date"
+            type="date"
+            class="login-form-field-value"
+          />
+        </div>
+        <input type="submit" class="login-form-submit" />
+      </fieldset>
+    </form>
+    <form
+      action="https://httpbin.org/anything"
+      method="post"
+      class="login-form"
+    >
+      <fieldset class="login-form-fieldset">
+        <legend class="login-form-legend">[POST]</legend>
+        <div class="login-form-field-wrapper">
+          <label for="username" class="login-form-field-label">Username</label>
+          <input id="username" name="username" class="login-form-field-value" />
+        </div>
+        <div class="login-form-field-wrapper">
+          <label for="password" class="login-form-field-label">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            class="login-form-field-value"
+          />
+        </div>
+        <div class="login-form-field-wrapper">
+          <label for="date" class="login-form-field-label">Date</label>
+          <input
+            id="date"
+            name="date"
+            type="date"
+            class="login-form-field-value"
+          />
+        </div>
+        <input type="submit" class="login-form-submit" />
+        <!-- <button type="submit">Submit</button> -->
+      </fieldset>
+    </form>
+  </body>
+</html>

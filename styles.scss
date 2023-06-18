@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form {
+  width: 300px;
+  height: 250px;
+
+  &-fieldset {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  &-legend {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #eee;
+    padding: 5px 10px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-style: italic;
+  }
+
+  &-field-wrapper {
+    display: flex;
+  }
+
+  &-field-label {
+    background-color: #eee;
+    font-style: italic;
+    padding: 3px 5px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+  &-field-value {
+    border: 1px solid black;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  &-submit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #eee;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: unset;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+    height: 28px;
+    width: 63px;
+    font-weight: bold;
+  }
+}
